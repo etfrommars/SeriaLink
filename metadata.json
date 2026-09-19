@@ -1,0 +1,6 @@
+{
+  "name": "Web Serial Studio 串口调试助手",
+  "description": "基于 Web Serial API 的专业网页端串口调试工具，支持实时数据流、Hex/ASCII模式、波特率及流控配置、实时示波器图表、关键词高亮、校验计算器、自动发送与应答及CSV日志导出。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
