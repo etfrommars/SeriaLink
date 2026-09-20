@@ -13,7 +13,8 @@ import {
   Minimize2,
   Save,
   CheckCircle2,
-  AlertCircle
+  AlertCircle,
+  Github
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -245,6 +246,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <HelpCircle className="w-4 h-4" />
           </button>
+
+          {/* GitHub Repository */}
+          <a
+            href="https://github.com/etfrommars/SeriaLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition-all cursor-pointer"
+            title="查看 GitHub 仓库 (etfrommars/SeriaLink)"
+          >
+            <Github className="w-3.5 h-3.5 text-slate-200" />
+            <span className="hidden sm:inline font-mono">GitHub</span>
+          </a>
         </div>
       </div>
     </header>

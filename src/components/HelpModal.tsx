@@ -1,5 +1,5 @@
 import React from 'react';
-import { HelpCircle, X, ExternalLink, Cpu, ShieldAlert, CheckCircle2 } from 'lucide-react';
+import { HelpCircle, X, ExternalLink, Cpu, ShieldAlert, CheckCircle2, Github } from 'lucide-react';
 import { isWebSerialSupported } from '../utils/serialHelper';
 
 interface HelpModalProps {
@@ -77,7 +77,18 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
           </div>
         </div>
 
-        <div className="flex justify-end pt-2 border-t border-slate-800">
+        <div className="flex items-center justify-between pt-2 border-t border-slate-800">
+          <a
+            href="https://github.com/etfrommars/SeriaLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-cyan-400 transition-colors"
+          >
+            <Github className="w-3.5 h-3.5" />
+            <span>GitHub: etfrommars/SeriaLink</span>
+            <ExternalLink className="w-3 h-3 text-slate-500" />
+          </a>
+
           <button
             onClick={onClose}
             className="px-4 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold cursor-pointer"
